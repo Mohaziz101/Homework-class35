@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
@@ -21,27 +22,61 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+    'item1': { name: 'beer', value: 1.5 },
+    'item2': { name: 'cheese', value: 1.75 },
+    'item3': { name: 'banana', value: 1.25 },
+    'item4': { name: 'milk', value: 2.5 },
+    'item5': { name: 'coco', value: 0.5 },
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+const values = []
+
+
+for (const key in cartForParty) {
+    if (Object.hasOwnProperty.call(cartForParty, key)) {
+        const element = cartForParty[key];
+        values.push(element.value)
+    }
+}
+
+
+const valuesObj = Object.assign({}, values)
+
+function calculateTotalPrice(parameter) {
+    let total = 0; 
+
+    
+    for (const item in parameter) {
+
+        if (Object.hasOwnProperty.call(parameter, item)) {
+            const element = parameter[item];
+
+            
+            if (Object.keys(element).length === 2) {
+                total += element.value
+            } else {
+                total += element
+            }
+        }
+    }
+    return "Total: €" + total;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+    console.log('\nTest 1: calculateTotalPrice should take one parameter');
+    console.assert(calculateTotalPrice(valuesObj) === calculateTotalPrice(cartForParty))
 }
 
 function test2() {
-  console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+    console.log('\nTest 2: return correct output when passed cartForParty');
+    console.assert(calculateTotalPrice(valuesObj) === calculateTotalPrice(cartForParty))
+
 }
 
 function test() {
-  test1();
-  test2();
+    test1();
+    test2();
 }
 
 test();

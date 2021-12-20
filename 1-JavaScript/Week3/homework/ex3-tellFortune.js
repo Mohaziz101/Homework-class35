@@ -33,16 +33,16 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(array /* TODO parameter(s) go here */ ) {
-  // TODO complete this function
+function selectRandomly(array) {
+
   const random = Math.floor(Math.random() * 5);
   return array[random]
 }
 
-function tellFortune(nkids, partnerN, loca, jobT) {
- 
-  return "You will be a" + " " + selectRandomly(jobT) + " " + "in" + " " + selectRandomly(loca)
-    +" " + "married to" + " " + selectRandomly(partnerN) + " " + "with" + " " + selectRandomly(nkids) + " " + "kids";
+function tellFortune(kids, partnerN, local, jobT) {
+
+  return "You will be a" + " " + selectRandomly(jobT) + " " + "in" + " " + selectRandomly(local) + "," +
+    " " + "married to" + " " + selectRandomly(partnerN) + " " + "with" + " " + selectRandomly(kids) + " " + "kids" + ".";
 }
 
 function main() {
@@ -51,11 +51,11 @@ function main() {
   ];
 
   const partnerNames = [
-    "Sara", "Mona", "Janat", "Emily", "nada"
+    "Sara", "Mona", "Janet", "Emily", "nadia"
   ];
 
   const locations = [
-    "Amsterdam", "Rotterdam", "Utrecht ", "Eindhoven", "Henglo"
+    "Amsterdam", "Rotterdam", "Utrecht ", "Eindhoven", "Hengelo"
   ];
 
   const jobTitles = [

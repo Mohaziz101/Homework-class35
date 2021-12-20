@@ -12,8 +12,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 4. Return the new array as the return value of the function.
 5. Run the exercise and verify that it passes all the unit tests.
 ------------------------------------------------------------------------------*/
-const employeeRecords = [
-  {
+const employeeRecords = [{
     name: 'John',
     occupation: 'developer',
     gender: 'M',
@@ -30,8 +29,24 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
+function filterPrivateData(employeeRecords) {
   // TODO complete this function
+  const newArray = []
+  for (const item of employeeRecords) {
+    const {
+      name,
+      occupation,
+      email
+    } = item;
+    const newEmp = {
+      name,
+      occupation,
+      email
+    }
+    newArray.push(newEmp)
+  }
+
+  return newArray
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -40,10 +55,10 @@ function test1() {
   console.assert(filterPrivateData.length === 1);
 }
 
+
 function test2() {
   console.log('Test 2: gender and salary should be filtered out');
-  const expected = [
-    {
+  const expected = [{
       name: 'John',
       occupation: 'developer',
       email: 'john.doe@somewhere.net',
