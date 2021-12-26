@@ -15,19 +15,18 @@ it pure. Do the following:
    spread syntax.
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
-// ! Function under test
 
-function addToShoppingCart(shoppingCart) {
-
+function addToShoppingCart(shoppingCart, groceryItem) {
+  // create new array with object destructing method
+  //get initial shopping cart and grocery item , then concat all items and create new shoppingCart array
+  shoppingCart = [...shoppingCart, groceryItem]
   if (shoppingCart.length > 3) {
-    shoppingCart.shift();
-    return "You bought " + shoppingCart.join(', ') + "!";
-  } else {
+    shoppingCart.shift(); //when shopping cart length > 3 remove first item of shopping cart
     return "You bought " + shoppingCart.join(', ') + "!";
   }
-
-
+  return "You bought " + shoppingCart.join(', ') + "!";
 }
+
 
 
 function test1() {
@@ -37,6 +36,7 @@ function test1() {
 
 function test2() {
   console.log('Test 2: addToShoppingCart should be a pure function');
+
   const initialCart = ['bananas', 'milk'];
   const result1 = addToShoppingCart(initialCart, 'chocolate');
   const result2 = addToShoppingCart(initialCart, 'chocolate');

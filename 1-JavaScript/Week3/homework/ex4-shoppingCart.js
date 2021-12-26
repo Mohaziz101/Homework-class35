@@ -34,9 +34,8 @@ function addToShoppingCart(grocery) {
     if (shoppingCart.length > 3) {
       shoppingCart.shift();
       res = "You bought " + shoppingCart.join(', ') + "!";
-    } else {
-      res = "You bought " + shoppingCart.join(', ') + "!";
     }
+    return "You bought " + shoppingCart.join(', ') + "!";
   }
   return res;
 }

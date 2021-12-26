@@ -35,14 +35,14 @@ body, this code is now written once only in a separated function.
 // a randomly selected element as its return value.
 function selectRandomly(array) {
 
-  const random = Math.floor(Math.random() * 5);
+  const random = Math.floor(Math.random() * array.length);
   return array[random]
 }
 
 function tellFortune(kids, partnerN, local, jobT) {
 
-  return "You will be a" + " " + selectRandomly(jobT) + " " + "in" + " " + selectRandomly(local) + "," +
-    " " + "married to" + " " + selectRandomly(partnerN) + " " + "with" + " " + selectRandomly(kids) + " " + "kids" + ".";
+  //change after feedback recommendation for using ES6 templating
+  return `You will be an ${selectRandomly(jobT)} in ${selectRandomly(local)}, married to ${selectRandomly(partnerN)} with ${selectRandomly(kids)} kids.`;
 }
 
 function main() {
