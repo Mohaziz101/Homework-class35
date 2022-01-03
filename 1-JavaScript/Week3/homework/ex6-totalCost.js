@@ -33,17 +33,18 @@ const cartForParty = {
 const values = []
 
 //loop for filter values from cartForParty Object
-for (const key in cartForParty) {
-    if (cartForParty, key) {
-        const element = cartForParty[key];
-        values.push(element.value)
-    }
-}
+
 
 //convert values array to object
 const valuesObj = Object.assign({}, values)
 
 function calculateTotalPrice() {
+    for (const key in cartForParty) {
+        if (cartForParty, key) {
+            const element = cartForParty[key];
+            values.push(element.value)
+        }
+    }
     const total = 0; //variable for store total value
 
 
