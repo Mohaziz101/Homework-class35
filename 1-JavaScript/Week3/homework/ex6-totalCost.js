@@ -22,43 +22,53 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-    banana: "1.25",
-    milk: ".99",
-    cheese: "25.01",
-    apple: "0.60",
-    coco: "10.34",
+    'item1': {
+        name: 'beer',
+        value: 1.5
+    },
+    'item2': {
+        name: 'cheese',
+        value: 1.5
+    },
+    'item3': {
+        name: 'banana',
+        value: 1.5
+    },
+    'item4': {
+        name: 'milk',
+        value: 2.5
+    },
+    'item5': {
+        name: 'Chico',
+        value: 0.5
+    },
 }
 
-//array for store item values
-const values = []
-
-//loop for filter values from cartForParty Object
-
-
-//convert values array to object
-const valuesObj = Object.assign({}, values)
-
-function calculateTotalPrice() {
-    for (const key in cartForParty) {
-        if (cartForParty, key) {
-            const element = cartForParty[key];
-            values.push(element.value)
+function calculateTotalPrice(cartValues) {
+    let totalCartValues = 0;
+    // eslint-disable-next-line no-restricted-syntax
+    for (const i in cartValues) {
+        // eslint-disable-next-line no-prototype-builtins
+        if (cartValues.hasOwnProperty(i)) {
+            totalCartValues += cartValues[i];
         }
     }
-    const total = 0; //variable for store total value
-
-
-    return "Total: €" + total;
+    return `Total: €${totalCartValues}`;
 }
+
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
     console.log('\nTest 1: calculateTotalPrice should take one parameter');
-    console.assert(calculateTotalPrice(valuesObj) === calculateTotalPrice(cartForParty))
+    const expected = 1;
+    const actual = calculateTotalPrice.length;
+    console.assert(actual === expected);
 }
 
 function test2() {
     console.log('\nTest 2: return correct output when passed cartForParty');
-    console.assert(calculateTotalPrice(valuesObj) === calculateTotalPrice(cartForParty))
+    const expected = 'Total: €7.5';
+    const actual = calculateTotalPrice(cartForParty);
+    console.assert(actual === expected);
 
 }
 
