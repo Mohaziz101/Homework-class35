@@ -358,3 +358,11 @@ ex7-mindPrivacy.js
 2021-12-26 05:18:11 info: -----------------------------------------
 2021-12-26 05:18:11 warn: A unit test file was not provided.
 2021-12-26 05:18:16 info: All steps were completed successfully
+2022-01-04 06:20:42 info: -----------------------------------------
+2022-01-04 06:20:42 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-01-04 06:20:42 info: -----------------------------------------
+2022-01-04 06:20:42 warn: A unit test file was not provided.
+2022-01-04 06:20:52 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:51:50 - Unknown word (builtins)
+

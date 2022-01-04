@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex6-totalCost.js:51:50 - Unknown word (builtins)
