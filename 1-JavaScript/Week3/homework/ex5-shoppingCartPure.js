@@ -19,12 +19,13 @@ it pure. Do the following:
 function addToShoppingCart(shoppingCart, groceryItem) {
   // create new array with object destructing method
   //get initial shopping cart and grocery item , then concat all items and create new shoppingCart array
-  shoppingCart = [...shoppingCart, groceryItem]
-  if (shoppingCart.length > 3) {
-    shoppingCart.shift(); //when shopping cart length > 3 remove first item of shopping cart
-    return "You bought " + shoppingCart.join(', ') + "!";
-  }
-  return "You bought " + shoppingCart.join(', ') + "!";
+  const newShoppingCart = [...shoppingCart];
+  if (groceryItem) {
+    newShoppingCart.push(groceryItem); //when shopping cart length > 3 remove first item of shopping cart
+    newShoppingCart.length > 3 ? newShoppingCart.shift() : null;
+    return newShoppingCart;
+  } else return newShoppingCart;
+
 }
 
 
@@ -47,7 +48,7 @@ function test3() {
   console.log('Test 3: `chocolate` should be added');
   const initialCart = ['bananas', 'milk'];
   const result = addToShoppingCart(initialCart, 'chocolate');
-  console.assert(result.length === 36);
+  console.assert(result.length === 3);
   console.assert(result.includes('chocolate'));
 }
 
@@ -55,7 +56,7 @@ function test4() {
   console.log('Test 4: `waffles` should be added');
   const initialCart = ['bananas', 'milk', 'chocolate'];
   const result = addToShoppingCart(initialCart, 'waffles');
-  console.assert(result.length === 36);
+  console.assert(result.length === 3);
   console.assert(result.includes('waffles'));
 }
 
