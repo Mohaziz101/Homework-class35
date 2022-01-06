@@ -25,19 +25,17 @@ const shoppingCart = ['bananas', 'milk'];
 
 function addToShoppingCart(grocery) {
 
-  let res;
+  if (typeof grocery === 'undefined')
+    return "You bought " + shoppingCart.join(', ') + "!";
 
-  if (typeof grocery === 'undefined') {
-    res = "You bought " + shoppingCart.join(', ') + "!";
-  } else {
+
+  else {
     shoppingCart.push(grocery);
     if (shoppingCart.length > 3) {
       shoppingCart.shift();
-      res = "You bought " + shoppingCart.join(', ') + "!";
     }
     return "You bought " + shoppingCart.join(', ') + "!";
   }
-  return res;
 }
 
 
