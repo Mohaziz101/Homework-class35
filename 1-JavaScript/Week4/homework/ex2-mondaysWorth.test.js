@@ -10,8 +10,7 @@ Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-Java
 - Make sure the program can be used on any array of objects that contain a
   `duration` property with a number value.
 ------------------------------------------------------------------------------*/
-const mondayTasks = [
-  {
+const mondayTasks = [{
     name: 'Daily standup',
     duration: 30, // specified in minutes
   },
@@ -31,9 +30,16 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, hourlyRate) {
+
+  const durations = tasks.map(workDuration => (workDuration.duration)); //Select duration time only
+  const hourRating = durations.map(workRating => (workRating / 60 * hourlyRate)); //Multiply each duration by a per - hour rate
+  const totalPrice = hourRating.reduce((total, mondayDuration) => total + mondayDuration, 0).toFixed(2); //sum it all up.
+
+  return `€${totalPrice}`
+
 }
+
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
