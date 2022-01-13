@@ -261,3 +261,23 @@ Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\mohaz
 2022-01-08 12:07:02 info: --------------------------------------
 2022-01-08 12:07:07 info: All unit tests passed.
 2022-01-08 12:07:16 info: All steps were completed successfully
+2022-01-13 11:14:32 info: -------------------------------------------------
+2022-01-13 11:14:32 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-01-13 11:14:32 info: -------------------------------------------------
+2022-01-13 11:14:39 info: All unit tests passed.
+2022-01-13 11:14:48 info: All steps were completed successfully
+2022-01-13 11:57:22 info: -------------------------------------------------
+2022-01-13 11:57:22 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-01-13 11:57:22 info: -------------------------------------------------
+2022-01-13 11:57:29 info: All unit tests passed.
+2022-01-13 11:57:38 info: All steps were completed successfully
+2022-01-13 12:23:56 info: -------------------------------------------------
+2022-01-13 12:23:56 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-01-13 12:23:56 info: -------------------------------------------------
+2022-01-13 12:24:03 info: All unit tests passed.
+2022-01-13 12:24:11 info: All steps were completed successfully
+2022-01-13 05:51:02 info: -------------------------------------------------
+2022-01-13 05:51:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-01-13 05:51:02 info: -------------------------------------------------
+2022-01-13 05:51:09 info: All unit tests passed.
+2022-01-13 05:51:18 info: All steps were completed successfully

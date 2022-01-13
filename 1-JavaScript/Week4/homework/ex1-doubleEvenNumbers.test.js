@@ -12,8 +12,8 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
   // TODO rewrite the function body using `map` and `filter`.
-  const doubleNumbers = numbers.filter((number) => number % 2 === 0);
-  const newDoubleNumbers = doubleNumbers.map((num) => num * 2);
+  const evenNumbers = numbers.filter((number) => number % 2 === 0);
+  const newDoubleNumbers = evenNumbers.map((num) => num * 2);
 
   return newDoubleNumbers;
 }

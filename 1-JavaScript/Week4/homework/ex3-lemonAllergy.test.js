@@ -28,9 +28,9 @@ const fruitBasket = [
 // ! Function under test
 function sanitizeFruitBasket(basket, item) {
   // eslint-disable-next-line eqeqeq
-  const disposeLemon = basket.filter(fruits => fruits !== item); //dispose any element with a "Lemon" string
+  const newBasket = basket.filter(fruits => fruits !== item); //dispose any element with a "Lemon" string
 
-  return disposeLemon;
+  return newBasket;
 }
 
 sanitizeFruitBasket(fruitBasket, "lemon");
@@ -44,24 +44,13 @@ describe('sanitizeFruitBasket', () => {
   test('should not modify the original `fruitBasket` array', () => {
     // Save the original contents of the fruit basket
     const originalFruitBasketContents = [...fruitBasket];
-    // TODO replace next line with your code
-    const actual = originalFruitBasketContents;
-    const expected = [
-      'apple',
-      'lemon',
-      'grapefruit',
-      'lemon',
-      'banana',
-      'watermelon',
-      'lemon',
-    ];
-    expect(actual).toEqual(expected);
+    sanitizeFruitBasket(fruitBasket, "lemon");
+
+    expect(originalFruitBasketContents).toEqual(fruitBasket);
   });
 
   test('should return a new array that does not include the unwanted `lemon`', () => {
     // TODO replace next line with your code
-    const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
-    const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
-    expect(actual).toEqual(expected);
+    expect(sanitizeFruitBasket).not.toContain('lemon');
   });
 });
