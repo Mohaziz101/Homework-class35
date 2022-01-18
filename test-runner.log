@@ -281,3 +281,997 @@ Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\mohaz
 2022-01-13 05:51:02 info: -------------------------------------------------
 2022-01-13 05:51:09 info: All unit tests passed.
 2022-01-13 05:51:18 info: All steps were completed successfully
+2022-01-16 04:52:12 info: ------------------------------------------
+2022-01-16 04:52:12 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 04:52:12 info: ------------------------------------------
+2022-01-16 04:52:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.069 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-01-16 04:54:43 info: ------------------------------------------
+2022-01-16 04:54:43 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 04:54:43 info: ------------------------------------------
+2022-01-16 04:54:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.793 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-01-16 04:55:24 info: ------------------------------------------
+2022-01-16 04:55:24 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 04:55:24 info: ------------------------------------------
+2022-01-16 04:55:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.064 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-01-16 04:55:32 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  10:27  error  'srcset' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-16 04:55:50 info: ------------------------------------------
+2022-01-16 04:55:50 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 04:55:50 info: ------------------------------------------
+2022-01-16 04:55:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.985 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-01-16 04:58:52 info: ---------------------------------------
+2022-01-16 04:58:52 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 04:58:52 info: ---------------------------------------
+2022-01-16 04:59:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.732 s)
+  Generated HTML
+    √ should be syntactically valid (218 ms)
+    × should have all TODO comments removed (3 ms)
+    √ the body font-family should be `Arial, sans-serif` (2 ms)
+    √ each <li> should have the CSS class `list-item` (2 ms)
+    × each <li> should rendered red (49 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        5.89 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-01-16 04:59:08 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:23:38 - Unknown word (Abdulaziz)
+
+2022-01-16 05:01:59 info: ---------------------------------------
+2022-01-16 05:01:59 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 05:01:59 info: ---------------------------------------
+2022-01-16 05:02:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.18 s)
+  Generated HTML
+    √ should be syntactically valid (151 ms)
+    × should have all TODO comments removed (3 ms)
+    √ the body font-family should be `Arial, sans-serif` (1 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    × each <li> should rendered red (62 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        5.329 s, estimated 6 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-01-16 05:02:14 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:23:38 - Unknown word (Abdulaziz)
+
+2022-01-16 05:04:44 info: ---------------------------------------
+2022-01-16 05:04:44 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 05:04:44 info: ---------------------------------------
+2022-01-16 05:04:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.734 s)
+  Generated HTML
+    √ should be syntactically valid (218 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (7 ms)
+    × each <li> should have the CSS class `list-item` (4 ms)
+    × each <li> should rendered red (60 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        5.975 s, estimated 6 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-01-16 05:04:59 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  15:2  error  Parsing error: Unterminated regular expression
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-16 05:08:12 info: ---------------------------------------
+2022-01-16 05:08:12 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 05:08:12 info: ---------------------------------------
+2022-01-16 05:08:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.116 s)
+  Generated HTML
+    √ should be syntactically valid (207 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (6 ms)
+    × each <li> should have the CSS class `list-item` (3 ms)
+    × each <li> should rendered red (50 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        6.306 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-01-16 05:08:27 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  15:2  error  Parsing error: Unterminated regular expression
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-16 05:13:04 info: ---------------------------------------
+2022-01-16 05:13:04 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-16 05:13:04 info: ---------------------------------------
+2022-01-16 05:13:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (5.747 s)
+  catWalk
+    √ HTML should be syntactically valid (158 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.943 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-16 05:13:17 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  37:8  warning  'windowWidth' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  44:8  warning  'rect' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+  47:8  warning  'checkFullTrack' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  54:8  warning  'checkFullHalf' is never reassigned. Use 'const' instead   no-autofix/prefer-const
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+2022-01-16 05:22:18 info: ----------------------------------------
+2022-01-16 05:22:18 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-16 05:22:18 info: ----------------------------------------
+2022-01-16 05:22:27 info: All unit tests passed.
+2022-01-16 05:22:33 info: All steps were completed successfully
+2022-01-16 05:26:46 info: ---------------------------------------
+2022-01-16 05:26:46 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 05:26:46 info: ---------------------------------------
+2022-01-16 05:26:55 info: All unit tests passed.
+2022-01-16 05:27:01 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:53 - Unknown word (Kabab)
+
+2022-01-16 05:27:58 info: ---------------------------------------
+2022-01-16 05:27:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-16 05:27:58 info: ---------------------------------------
+2022-01-16 05:28:07 info: All unit tests passed.
+2022-01-16 05:28:14 info: All steps were completed successfully
+2022-01-16 06:25:40 info: ------------------------------------------
+2022-01-16 06:25:40 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 06:25:40 info: ------------------------------------------
+2022-01-16 06:25:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (2 ms)
+    × should set the `src` property (2 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.242 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-01-16 06:25:50 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  16:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-16 06:26:30 info: ------------------------------------------
+2022-01-16 06:26:30 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 06:26:30 info: ------------------------------------------
+2022-01-16 06:26:35 info: All unit tests passed.
+2022-01-16 06:26:44 info: All steps were completed successfully
+2022-01-16 06:30:06 info: ------------------------------------------
+2022-01-16 06:30:06 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-01-16 06:30:06 info: ------------------------------------------
+2022-01-16 06:30:12 info: All unit tests passed.
+2022-01-16 06:30:20 info: All steps were completed successfully
+2022-01-17 05:23:05 info: --------------------------------------------
+2022-01-17 05:23:05 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-01-17 05:23:05 info: --------------------------------------------
+2022-01-17 05:23:17 info: All unit tests passed.
+2022-01-17 05:23:24 info: All steps were completed successfully
+2022-01-17 05:24:46 info: ---------------------------------------
+2022-01-17 05:24:46 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:24:46 info: ---------------------------------------
+2022-01-17 05:24:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (230 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.095 s, estimated 6 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 05:43:01 info: ---------------------------------------
+2022-01-17 05:43:01 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:43:01 info: ---------------------------------------
+2022-01-17 05:43:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (5.568 s)
+  catWalk
+    √ HTML should be syntactically valid (200 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.72 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 05:49:11 info: ---------------------------------------
+2022-01-17 05:49:11 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:49:11 info: ---------------------------------------
+2022-01-17 05:49:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (5.439 s)
+  catWalk
+    √ HTML should be syntactically valid (216 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.587 s, estimated 6 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 05:51:06 info: ---------------------------------------
+2022-01-17 05:51:06 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:51:06 info: ---------------------------------------
+2022-01-17 05:51:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (5.305 s)
+  catWalk
+    √ HTML should be syntactically valid (225 ms)
+    × should have all TODO comments removed (2 ms)
+    × should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        5.462 s, estimated 6 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 05:51:19 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  24:6  error  Parsing error: Unexpected token img
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-17 05:51:23 error: *** Spell Checker Report ***
+
+ex5-catWalk/index.js:24:1 - Unknown word (onst)
+
+2022-01-17 05:52:05 info: ---------------------------------------
+2022-01-17 05:52:05 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:52:05 info: ---------------------------------------
+2022-01-17 05:52:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (5.579 s)
+  catWalk
+    √ HTML should be syntactically valid (196 ms)
+    × should have all TODO comments removed (3 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.727 s, estimated 6 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 05:53:02 info: ---------------------------------------
+2022-01-17 05:53:02 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 05:53:02 info: ---------------------------------------
+2022-01-17 05:53:12 info: All unit tests passed.
+2022-01-17 05:53:19 info: All steps were completed successfully
+2022-01-17 12:13:01 info: ---------------------------------------
+2022-01-17 12:13:01 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 12:13:01 info: ---------------------------------------
+2022-01-17 12:13:14 info: All unit tests passed.
+2022-01-17 12:13:18 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  26:5  warning  'int' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  51:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-01-17 12:14:27 info: ---------------------------------------
+2022-01-17 12:14:27 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 12:14:27 info: ---------------------------------------
+2022-01-17 12:14:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (6.224 s)
+  catWalk
+    √ HTML should be syntactically valid (246 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `setInterval()` and/or `setTimeout()` (2 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        6.409 s, estimated 7 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 12:14:43 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  26:10  error  Parsing error: Unexpected token ;
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-01-17 12:16:19 info: ---------------------------------------
+2022-01-17 12:16:19 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 12:16:19 info: ---------------------------------------
+2022-01-17 12:16:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (6.479 s)
+  catWalk
+    √ HTML should be syntactically valid (251 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.654 s, estimated 7 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2022-01-17 12:16:34 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:10  error    'catWalk' is defined but never used  no-unused-vars
+  52:1   warning  Remove commented-out code            hyf/no-commented-out-code
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-01-17 12:17:32 info: ---------------------------------------
+2022-01-17 12:17:32 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 12:17:32 info: ---------------------------------------
+2022-01-17 12:17:43 info: All unit tests passed.
+2022-01-17 12:17:52 info: All steps were completed successfully
+2022-01-17 12:26:23 info: ---------------------------------------
+2022-01-17 12:26:23 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 12:26:23 info: ---------------------------------------
+2022-01-17 12:26:35 info: All unit tests passed.
+2022-01-17 12:26:44 info: All steps were completed successfully
+2022-01-17 03:53:05 info: ---------------------------------------
+2022-01-17 03:53:05 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 03:53:05 info: ---------------------------------------
+2022-01-17 03:53:17 info: All unit tests passed.
+2022-01-17 03:53:21 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  37:8  warning  'windowWidth' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  44:8  warning  'rect' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+  47:8  warning  'checkFullTrack' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  54:8  warning  'checkFullHalf' is never reassigned. Use 'const' instead   no-autofix/prefer-const
+  72:4  error    'int' is not defined                                       no-undef
+
+✖ 5 problems (1 error, 4 warnings)
+
+
+2022-01-17 03:57:38 info: ---------------------------------------
+2022-01-17 03:57:38 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 03:57:38 info: ---------------------------------------
+2022-01-17 03:57:49 info: All unit tests passed.
+2022-01-17 03:57:53 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  37:8  warning  'windowWidth' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  44:8  warning  'rect' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+  47:8  warning  'checkFullTrack' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  54:8  warning  'checkFullHalf' is never reassigned. Use 'const' instead   no-autofix/prefer-const
+  72:4  error    'int' is not defined                                       no-undef
+
+✖ 5 problems (1 error, 4 warnings)
+
+
+2022-01-17 04:00:06 info: ---------------------------------------
+2022-01-17 04:00:06 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-17 04:00:06 info: ---------------------------------------
+2022-01-17 04:00:18 info: All unit tests passed.
+2022-01-17 04:00:27 info: All steps were completed successfully
+2022-01-18 04:09:55 info: ------------------------------------------
+2022-01-18 04:09:55 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-01-18 04:09:55 info: ------------------------------------------
+2022-01-18 04:10:02 info: All unit tests passed.
+2022-01-18 04:10:12 info: All steps were completed successfully

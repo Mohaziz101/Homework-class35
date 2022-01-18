@@ -21,8 +21,53 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+//select the cat image
+const cat = document.querySelector("img");
+
+//cat starting position
+let catPosition = 0;
+cat.style.left = `${catPosition}px`;
+
+//start the interval
+let walk = setInterval(catWalk, 50);
+
 function catWalk() {
-  // TODO complete this function
+
+   //window width
+   const windowWidth = window.innerWidth;
+
+   //increase cat position by 10px every interval
+   catPosition += 10;
+   cat.style.left = `${catPosition}px`;
+
+   //get cat position
+   const rect = cat.getBoundingClientRect();
+
+   //check if the cat reach the right-hand of the screen then reset its position to left
+   const checkFullTrack = inRange(rect.left, cat.width, windowWidth);
+   if (checkFullTrack) {
+      catPosition = 0;
+      cat.style.left = "0px";
+   }
+
+   //check if the cat reach the middle of the screen then change its picture for 5 seconds
+   const checkFullHalf = inRange(rect.left, cat.width / 2, windowWidth / 2);
+   if (checkFullHalf) {
+      cat.src = "https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424";
+      clearInterval(walk); // clear the catWalk interval
+      setTimeout(walkNow, 5000); //after 5 seconds start walkNow function
+   }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+function walkNow() {
+   cat.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+   walk = setInterval(catWalk, 50);
+}
+
+function inRange(catPosition, catWidth, windowWidth) {
+   if (catPosition >= (windowWidth) - 5 - (catWidth) && catPosition < (windowWidth) + 5 - (catWidth))
+      return true;
+}
+window.addEventListener('load', () => {
+   setInterval(catWalk, 5000);
+});

@@ -8,7 +8,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
+  const display = new Date().toLocaleTimeString();
+  document.body.textContent = display;
+  document.body.setAttribute(
+    'style',
+    'font-size: 60px; background:#add8e6; display: flex; flex-wrap:  wrap; padding: 30px; margin: 40vh auto; justify-content: center;  width: calc(100% - 40px); '
+  );
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+window.addEventListener('load', () => {
+  setInterval(addCurrentTime, 0);
+});
