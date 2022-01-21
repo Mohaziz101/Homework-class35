@@ -24,16 +24,16 @@ function createBookList(books) {
     'list-style: none;  display: flex; flex-wrap:  wrap; padding: 30px; margin: 0 auto; justify-content: center;  width: calc(100% - 40px); '
   );
 
-  books.forEach((element, i) => {
+  books.forEach((bookList, i) => {
     const li = document.createElement('li');
     const p = document.createElement('p');
-    p.textContent = `${element.title} - ${element.author}`;
+    p.textContent = `${bookList.title} - ${bookList.author}`;
     li.setAttribute(
       'style',
       'width: calc(27% - 52px); margin: 16px; padding: 11px; min-width: 300px'
     );
 
-    if (element.alreadyRead === true) {
+    if (bookList.alreadyRead) {
       li.style.backgroundColor = 'green';
     } else {
       li.style.backgroundColor = 'red';

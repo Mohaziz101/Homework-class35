@@ -44,8 +44,8 @@ function catWalk() {
    const rect = cat.getBoundingClientRect();
 
    //check if the cat reach the right-hand of the screen then reset its position to left
-   const checkFullTrack = inRange(rect.left, cat.width, windowWidth);
-   if (checkFullTrack) {
+   const catFinalPosition = inRange(rect.left, cat.width, windowWidth);
+   if (catFinalPosition) {
       catPosition = 0;
       cat.style.left = "0px";
    }

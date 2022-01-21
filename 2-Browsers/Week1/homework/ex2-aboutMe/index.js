@@ -25,4 +25,4 @@ li.forEach((li) => {
 const head = document.querySelector('head');
 const style = document.createElement('style');
 head.appendChild(style);
-style.textContent = '.list-item {color: red;}';
+// style.textContent = '.list-item {color: red;}';
