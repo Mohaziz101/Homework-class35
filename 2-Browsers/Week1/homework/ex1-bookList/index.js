@@ -42,13 +42,13 @@ function createBookList(books) {
     const img = document.createElement('img');
     img.style.width = '63%';
     if (i === 0) {
-      img.src = 'assets/the_design_of_everyday_things.jpg';
-      img.alt = 'Book-cover the_design_of_everyday_things';
+      img.src = `assets/${bookList.img}`;
+      img.alt = `Book-cover/${bookList.img}`;
     } else if (i === 1) {
-      img.src = 'assets/the_most_human_human.jpg';
-      img.alt = 'Book-cover the_most_human_human.jpg';
-    } else img.src = 'assets/the_pragmatic_programmer.jpg';
-    img.alt = 'Book-cover the_pragmatic_programmer.jpg';
+      img.src = `assets/${bookList.img}`;
+      img.alt = `Book-cover/${bookList.img}`;
+    } else img.src = `assets/${bookList.img}`;
+    img.alt = `Book-cover/${bookList.img}`;
 
     ul.appendChild(li);
     li.appendChild(p);
@@ -63,18 +63,22 @@ function main() {
       title: 'The Design of Everyday Things',
       author: 'Don Norman',
       isbn: '978-0465050659',
+      img: 'the_design_of_everyday_things.jpg',
+      
       alreadyRead: false,
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
+      img: 'the_most_human_human.jpg',
       alreadyRead: true,
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
+      img: 'the_pragmatic_programmer.jpg',
       alreadyRead: true,
     },
   ];
