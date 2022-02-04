@@ -41,14 +41,9 @@ function createBookList(books) {
 
     const img = document.createElement('img');
     img.style.width = '63%';
-    if (i === 0) {
-      img.src = `assets/${bookList.img}`;
-      img.alt = `Book-cover/${bookList.img}`;
-    } else if (i === 1) {
-      img.src = `assets/${bookList.img}`;
-      img.alt = `Book-cover/${bookList.img}`;
-    } else img.src = `assets/${bookList.img}`;
+    img.src = `assets/${bookList.img}`;
     img.alt = `Book-cover/${bookList.img}`;
+
 
     ul.appendChild(li);
     li.appendChild(p);
@@ -64,7 +59,7 @@ function main() {
       author: 'Don Norman',
       isbn: '978-0465050659',
       img: 'the_design_of_everyday_things.jpg',
-      
+
       alreadyRead: false,
     },
     {
