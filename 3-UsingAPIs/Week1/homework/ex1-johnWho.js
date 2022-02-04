@@ -8,25 +8,27 @@ Rewrite this function, but replace the callback syntax with the Promise syntax:
 - If the Promise `rejects`, pass an error as the argument to reject with: "You 
   didn't pass in a first name!"
 ------------------------------------------------------------------------------*/
-// TODO see above
-const getAnonName = (firstName, callback) => {
-  setTimeout(() => {
-    if (!firstName) {
-      callback(new Error("You didn't pass in a first name!"));
-      return;
-    }
+const getAnonName = firstName => {
+  const promising = new Promise((resolve, reject) => {
 
-    const fullName = `${firstName} Doe`;
+    setTimeout(() => {
+      if (!firstName)
+        reject(new Error("You didn't pass in a first name!"));
 
-    callback(fullName);
-  }, 1000);
-};
+      const fullName = `${firstName} Doe`;
+      resolve(fullName);
+
+    }, 1000);
+  });
+
+  return promising;
+}
 
 function main() {
   getAnonName('John', console.log);
 }
 
-// ! Do not change or remove the code below
+
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
