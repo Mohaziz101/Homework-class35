@@ -39,7 +39,7 @@ function main() {
     .catch((error) => console.log(error.message));
 }
 
-// ! Do not change or remove the code below
+
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
