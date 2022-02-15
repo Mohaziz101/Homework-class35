@@ -1,1 +1,23 @@
-/* add your styling here */
+body {
+    background-color: aquamarine;
+    margin-top: 5%;
+}
+
+.pokemon-button {
+    width: 10%;
+    display: block;
+    margin: 10px;
+    color: rgb(15, 15, 15);
+    margin-left: 40%;
+    margin-bottom: 1rem;
+
+}
+
+.pokemon-select {
+    display: block;
+    margin: 10px;
+    background-color: rgb(22, 243, 33);
+    font-size: 1rem;
+    margin-left: 40%;
+
+}
