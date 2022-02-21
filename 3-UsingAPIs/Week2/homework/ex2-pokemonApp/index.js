@@ -22,26 +22,18 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(url) {
-  return fetch(url)
-    .then((response) => {
-      return response.json();
-    })
+async function fetchData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error('Failed to fetch');
+  }
+  return response.json()
     .then((jsonData) => {
       return jsonData.results;
-    })
-    .catch((error) => {
-      console.log(error);
-      return error;
     });
 }
 async function fetchAndPopulatePokemons(pokemonList) {
 
-  const buttonElement = document.createElement("button");
-  buttonElement.textContent = "Get Pokemon!";
-  buttonElement.classList.add("pokemon-button");
-  buttonElement.id = "pokeButton"
-  document.body.appendChild(buttonElement);
 
   const pokemonBtn = document.getElementById("pokeButton");
   const selectElement = document.createElement("select");
@@ -65,7 +57,11 @@ async function fetchImage(url, pokemonImg, pokemonName) {
   const jsonPokemonData = await pokemonData.json();
   pokemonImg.src = `${jsonPokemonData["sprites"]["other"]["dream_world"]["front_default"]}`;
   pokemonImg.alt = `image of ${pokemonName}`;
+
+
 }
+
+
 
 async function main() {
   try {
@@ -76,9 +72,6 @@ async function main() {
     const pokemonSelect = await fetchAndPopulatePokemons(pokemonsArr);
     const pokemonImg = document.createElement("img");
 
-
-    pokemonImg.src = "#";
-    pokemonImg.alt = "";
     document.body.appendChild(pokemonImg);
 
 

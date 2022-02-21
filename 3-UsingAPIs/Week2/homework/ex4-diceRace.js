@@ -34,4 +34,9 @@ if (process.env.NODE_ENV !== 'test') {
 }
 module.exports = rollDice;
 
-//I think the reason that the Promise resolve or reject doesn't stop the asynchronous code from continuing to run.
+// when we use Promise.race() it will
+// catch first resolve or reject response.we
+// throw dice independently in this exercise.
+// therefore Promise.race() already catches any resolve or reject the other dices
+// continue rolling.so we get only one
+//  resolve or reject because of Promise.race() method.
